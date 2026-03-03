@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Engine Sederhana</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="gaya.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+  <body >
+    <header>
+      <div class="settings-buttons">
+        <button id="musicBtn">▶ Play Music</button>
+        <label>
+          Brightness
+          <input
+            type="range"
+            id="brightnessSlider"
+            min="50"
+            max="150"
+            value="100"
+          />
+        </label>
+      </div>
+    </header>
+    <div id="pageContent">
+      <h1>Search Engine Sederhana</h1>
+
+      <section class="search-bar">
+        <form id="searchForm">
+          <input
+            type="text"
+            id="query"
+            placeholder="Masukkan kata kunci..."
+            required
+          />
+          
+
+          <div class="external-search-buttons">
+            <button type="button" id="googleBtn">Google</button>
+            <button type="button" id="wikiBtn">Wikipedia</button>
+            <button type="submit">Cari Lokal</button>
+          </div>
+        </form>
+      </section>
+
+      <div id="results"></div>
+    </div>
+
+    <audio id="backgroundMusic" src="backsound.mp3" loop></audio>
+
+    <footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Me</h3>
+      <div class="social-icons">
+        <a href="https://github.com/arkankeano28" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://instagram.com/a_comicus2nd" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/-" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://discord.com/users/arkan05828" target="_blank">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy;<span id="year"></span> MyWebsite. All rights reserved.</p>
+  </div>
+</footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
